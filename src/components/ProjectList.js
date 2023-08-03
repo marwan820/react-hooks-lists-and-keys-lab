@@ -4,21 +4,30 @@ import ProjectItem from "./ProjectItem";
 function ProjectList({ projects }) {
 // for each object in the array render one ProjectIem comp
 // with the correct props. use id for the key prop
-// const project = projects.map((item) = >
 //<div >key={user}</div>
+
+
+
+const project = projects.map((item) =>{
+  return (
+
+    
+    
+
+   <ProjectItem key={item.id} name = {item.name} about = {item.about} technologies= {item.technologies}/>
+  )})
+
+
   
 
 
-
-
-  console.log(projects);
   return (
+
     <div id="projects">
       <h2>My Projects</h2>
-      <div id="project-list">{/* render ProjectItem components here */}</div>
-   
+      {project} 
     </div>
-  );
-}
+  )};
+
 
 export default ProjectList;
