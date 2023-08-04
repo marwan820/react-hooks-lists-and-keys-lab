@@ -4,10 +4,9 @@ import React from "react";
 function ProjectItem({name, about, technologies }) {
 
 
-  const project = technologies.map((item,index)=> {
-  return <span key = {index}>{item}</span>
+  const project = technologies.map((item)=> {
+  return <span key = {Math.floor(Math.random()*100)}>{item}</span>
   })
-
 
   return (
 

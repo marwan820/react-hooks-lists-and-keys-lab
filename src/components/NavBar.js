@@ -3,9 +3,9 @@ import React from "react";
 
 function NavBar() {
   const links = ["home", "about", "projects"]
- const linksList = links.map( (link,index) => {
+ const linksList = links.map( (link) => {
 
-  return <a href= {`#${link}`}  key= {index}>{link}</a>
+  return <a href= {`#${link}`}  key ={Math.floor(Math.random()*100)}>{link}</a>
   
   
 
